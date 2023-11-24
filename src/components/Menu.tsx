@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -21,16 +24,24 @@ const items = [
 ];
 
 function Menu({ name }: { name: string }) {
+	const [isOpen, setIsOpen] = useState<any>(false);
+
 	return (
-		<DropdownMenu>
+		<DropdownMenu open={isOpen}>
 			<DropdownMenuTrigger asChild>
-				<div className="flex items-center space-x-1">
-					<div className="underline-yellow hover:underline-yellow">{name}</div>
+				<div className={`flex items-center space-x-1 cursor-pointer`}>
+					<div
+						className="underline-yellow hover:underline-yellow"
+						onMouseEnter={() => setIsOpen(true)}
+						onMouseOut={() => setIsOpen(false)}
+					>
+						{name}
+					</div>
 					<ChevronDown className="w-3 h-3" />
 				</div>
 			</DropdownMenuTrigger>
 			<DropdownMenuContent
-				className={`p-5 bg-[#414142] border-none rounded-none ${
+				className={`p-5 bg-[#29292A] border-none rounded-none ${
 					name === "shop" ? "md:w-[200vw] md:ml-0" : "md:w-[260px] md:ml-5"
 				}   md:mt-2 text-white flex flex-col space-y-2`}
 			>

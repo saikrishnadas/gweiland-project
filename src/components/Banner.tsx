@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { handlee } from "@/fonts/fonts";
+import { comfortaa, poppinsBold } from "@/fonts/fonts";
 
 const Banner = ({ images, texts }: { images: string[]; texts: string[] }) => {
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -23,7 +23,7 @@ const Banner = ({ images, texts }: { images: string[]; texts: string[] }) => {
 	};
 
 	return (
-		<div className="h-[100vh] md:h-[90vh] relative overflow-hidden">
+		<div className="h-[100vh] max-w-[100vw] relative overflow-hidden">
 			{/* Display the current image */}
 			{/* Dark overlay with reduced opacity */}
 			<div
@@ -40,7 +40,7 @@ const Banner = ({ images, texts }: { images: string[]; texts: string[] }) => {
 			{/* Left navigation button */}
 			<button
 				onClick={showPreviousImage}
-				className="hidden md:flex absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-white hover:text-black w-12 h-12 flex items-center justify-center"
+				className="hidden md:flex absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-white hover:text-black w-12 h-12 items-center justify-center"
 			>
 				<ArrowLeft className="w-5 h-5" />
 			</button>
@@ -55,21 +55,23 @@ const Banner = ({ images, texts }: { images: string[]; texts: string[] }) => {
 
 			{/* Text on top of the image */}
 			<div
-				className={`absolute top-[50%] ${
+				className={`absolute top-[20%] ${
 					getTextAlignment(currentImageIndex) === "left"
 						? "left-[10%]"
-						: "right-[10%]"
+						: "right-[20%]"
 				} text-white`}
 			>
-				{/* <p className={`${handlee.className} antialiased text-4xl font-bold`}>
+				<p
+					className={`${poppinsBold.className} antialiased text-[70px] max-w-[50px]`}
+				>
 					{texts[currentImageIndex]}
-				</p> */}
+				</p>
 				<button
 					className={`${
 						currentImageIndex === 0
 							? "bg-none border text-white hover:bg-white hover:text-black"
 							: "bg-white text-black hover:bg-black hover:text-white"
-					}  rounded-full w-32 h-12  transition-all duration-300`}
+					}  shop-button rounded-full w-32 h-12  transition-all duration-300 link wipe bot-up-wipe`}
 				>
 					shop now
 				</button>

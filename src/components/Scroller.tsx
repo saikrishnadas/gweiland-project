@@ -46,7 +46,7 @@ const Scroller = () => {
 
 	return (
 		<div className="flex w-full" ref={scrollContainerRef}>
-			<div className="bg-[#226BD3] min-w-[360px] h-36 m-10 rounded-l-full flex items-center justify-between pr-5">
+			<div className="bg-[#226BD3] min-w-[340px] h-36 m-10 rounded-l-full flex items-center justify-between pr-5 cursor-pointer">
 				<Image
 					src="/husky.png"
 					width={130}
@@ -60,7 +60,7 @@ const Scroller = () => {
 				</div>
 			</div>
 
-			<div className="bg-[#08202C] min-w-[360px] m-10 rounded-l-full flex items-center justify-between pr-5">
+			<div className="bg-[#08202C] min-w-[340px] m-10 rounded-l-full flex items-center justify-between pr-5 cursor-pointer">
 				<Image
 					src="/bitfin.png"
 					width={120}
@@ -73,7 +73,7 @@ const Scroller = () => {
 					<div className="text-white underline">shop now</div>
 				</div>
 			</div>
-			<div className="bg-[#FF8B8B] min-w-[360px] m-10 rounded-l-full flex items-center justify-between pr-5">
+			<div className="bg-[#FF8B8B] min-w-[340px] m-10 rounded-l-full flex items-center justify-between pr-5 cursor-pointer">
 				<Image
 					src="/cryopt.png"
 					width={120}
@@ -86,7 +86,7 @@ const Scroller = () => {
 					<div className="text-white underline">shop now</div>
 				</div>
 			</div>
-			<div className="bg-[#000000] min-w-[360px] m-10 rounded-l-full flex items-center justify-between pr-5">
+			<div className="bg-[#000000] min-w-[340px] m-10 rounded-l-full flex items-center justify-between pr-5 cursor-pointer">
 				<Image
 					src="/mes.png"
 					width={120}
@@ -99,7 +99,7 @@ const Scroller = () => {
 					<div className="text-white underline">shop now</div>
 				</div>
 			</div>
-			<div className="bg-[#000000] min-w-[360px] m-10 rounded-l-full flex items-center justify-between pr-5">
+			<div className="bg-[#000000] min-w-[340px] m-10 rounded-l-full flex items-center justify-between pr-5 cursor-pointer">
 				<Image
 					src="/pendulum.png"
 					width={120}

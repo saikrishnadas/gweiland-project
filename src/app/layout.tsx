@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { roboto } from "@/fonts/fonts";
+import { poppins } from "@/fonts/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${roboto.className} antialiased`}>{children}</body>
+			<body className={`${poppins.className} antialiased`}>{children}</body>
 		</html>
 	);
 }

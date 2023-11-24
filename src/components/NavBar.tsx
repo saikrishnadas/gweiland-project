@@ -44,7 +44,9 @@ function NavBar() {
 				/>
 			</div>
 			<div className="flex space-x-5 items-center pr-2 md:pr-10">
-				<div className="hidden md:block">become a affiliate</div>
+				<div className="hidden md:block underline-yellow hover:underline-yellow">
+					become a affiliate
+				</div>
 				<Twitter fill="white" className="w-5 h-5 hidden md:block" />
 				<Facebook fill="white" className="w-5 h-5 hidden md:block" />
 				<Instagram className="w-5 h-5 hidden md:block" />
