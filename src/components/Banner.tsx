@@ -70,8 +70,8 @@ const Banner = ({ images, texts }: { images: string[]; texts: string[] }) => {
 					className={`${
 						currentImageIndex === 0
 							? "bg-none border text-white hover:bg-white hover:text-black"
-							: "bg-white text-black hover:bg-black hover:text-white"
-					}  shop-button rounded-full w-32 h-12  transition-all duration-300 link wipe bot-up-wipe`}
+							: "bg-white text-black hover:bg-black hover:text-white "
+					}  rounded-full w-32 h-12`}
 				>
 					shop now
 				</button>

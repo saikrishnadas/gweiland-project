@@ -15,6 +15,15 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    animatedSettings: {
+      animatedSpeed: 1000,
+      heartBeatSpeed: 500,
+      hingeSpeed: 2000,
+      bounceInSpeed: 750,
+      bounceOutSpeed: 750,
+      animationDelaySpeed: 500,
+      classes: ['bounce', 'fadeIn']
+  },
     extend: {
       keyframes: {
         "accordion-down": {
@@ -30,6 +39,11 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+    },
+  },
+  variants: {
+    extend: {
+      animation: ['group-hover'],
     },
   },
   plugins: [require("tailwindcss-animate")],
